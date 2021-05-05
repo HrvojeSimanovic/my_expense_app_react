@@ -3,15 +3,30 @@ import React, { useState } from "react";
 import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expeneses/Expenses";
 
-// const DUMMY_EXPENSES = [
-//   { id: "e1", title: "Toilet Paper", amount: 944.12, date: new Date() },
-//   { id: "e2", title: "New TV", amount: 799.49, date: new Date() },
-//   { id: "e3", title: "Car Insurance", amount: 294.67, date: new Date() },
-//   { id: "e4", title: "New Desk (Wooden)", amount: 450, date: new Date() },
-// ];
+const DUMMY_EXPENSES = [
+  {
+    id: "e1",
+    title: "Toilet Paper",
+    amount: 944.12,
+    date: new Date(2018, 11, 24),
+  },
+  { id: "e2", title: "New TV", amount: 799.49, date: new Date(2019, 4, 16) },
+  {
+    id: "e3",
+    title: "Car Insurance",
+    amount: 294.67,
+    date: new Date(2020, 6, 11),
+  },
+  {
+    id: "e4",
+    title: "New Desk (Wooden)",
+    amount: 450,
+    date: new Date(2021, 6, 16),
+  },
+];
 
 const App = () => {
-  const [expenses, setExpenses] = useState([]);
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = (expenseData) => {
     setExpenses((prevExpenses) => {
