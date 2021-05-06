@@ -8,7 +8,7 @@ const DUMMY_EXPENSES = [
     id: "e1",
     title: "Toilet Paper",
     amount: 944.12,
-    date: new Date(2018, 11, 24),
+    date: new Date(2019, 11, 24),
   },
   { id: "e2", title: "New TV", amount: 799.49, date: new Date(2019, 4, 16) },
   {
